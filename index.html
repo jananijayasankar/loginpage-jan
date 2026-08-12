@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Login</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #eef2ff, #f8fafc);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      width: 380px;
+      background: #ffffff;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 95px;
+      height: 95px;
+      object-fit: contain;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1e293b;
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #64748b;
+      font-size: 14px;
+      margin-bottom: 28px;
+    }
+
+    .input-group {
+      margin-bottom: 18px;
+    }
+
+    .input-group label {
+      display: block;
+      color: #334155;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 7px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid #cbd5e1;
+      border-radius: 9px;
+      outline: none;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .input-group input:focus {
+      border-color: #4f46e5;
+      box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 22px;
+      font-size: 13px;
+    }
+
+    .remember {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      color: #64748b;
+    }
+
+    .forgot {
+      color: #4f46e5;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 13px;
+      border: none;
+      border-radius: 9px;
+      background: #4f46e5;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-btn:hover {
+      background: #4338ca;
+      transform: translateY(-1px);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 24px;
+      color: #94a3b8;
+      font-size: 12px;
+    }
+
+    @media (max-width: 450px) {
+      .login-container {
+        width: 90%;
+        padding: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-container">
+
+    <!-- College Logo -->
+    <div class="logo">
+      <img src="college-logo.png" alt="College Logo">
+    </div>
+
+    <h1>Welcome Back</h1>
+    <p class="subtitle">Login to your college portal</p>
+
+    <form>
+
+      <div class="input-group">
+        <label for="email">Email / Register Number</label>
+        <input
+          type="text"
+          id="email"
+          placeholder="Enter your email or register number"
+          required
+        >
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+          required
+        >
+      </div>
+
+      <div class="options">
+        <label class="remember">
+          <input type="checkbox">
+          Remember me
+        </label>
+
+        <a href="#" class="forgot">Forgot Password?</a>
+      </div>
+
+      <button type="submit" class="login-btn">
+        Login
+      </button>
+
+    </form>
+
+    <div class="footer">
+      © 2026 College Portal. All Rights Reserved.
+    </div>
+
+  </div>
+
+</body>
+</html>
